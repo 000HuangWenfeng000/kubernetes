@@ -1,0 +1,14 @@
+apiVersion: V1
+kind: Pod
+metadata:
+  name: kubia-manual-v2
+  labels:
+    creation_mathod: manual 
+    env: prod
+spec:
+  containers:
+  - images: nginx
+    name: kubia
+    ports:
+    - containerPort: 80
+      protocol: TCP
