@@ -15,4 +15,4 @@ spec:
         disk: ssd
       containers:
       - name: main
-        image: lukas/ssd-monitor
+        image: luksa/ssd-monitor
