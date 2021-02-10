@@ -4,7 +4,7 @@ metadata:
   name: kubia-gpu
 spec:
   nodeSelector:
-    gup: "true"
+    gpu: "true"
   containers:
   - image: nginx
     name: kubia
