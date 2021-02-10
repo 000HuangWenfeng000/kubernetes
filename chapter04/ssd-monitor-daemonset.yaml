@@ -7,7 +7,7 @@ spec:
     matchLabels:
       app: ssd-monitor
   template:
-    metadate:
+    metadata:
       labels:
         app: ssd-monitor
     spec:
