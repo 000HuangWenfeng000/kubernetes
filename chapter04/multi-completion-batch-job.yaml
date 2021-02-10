@@ -12,4 +12,4 @@ spec:
       restartPolicy: OnFailure
       containers: 
       - name: main
-        iamge: luksa/batch-job
+        image: luksa/batch-job
