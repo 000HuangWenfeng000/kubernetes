@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: ReplicaSet
-metedata:
+metadata:
   name: kubia
 spec:
   replicas: 3
