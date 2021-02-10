@@ -12,7 +12,8 @@ spec:
       - kubia
   template:
     metadata:
-      name: kubia
+      labels:
+        app: kubia
     spec:
       containers:
       - name: kubia
