@@ -3,9 +3,10 @@ kind: Pod
 metadata:
   name: kubia-liveness
 spec:
-- image: luksa/kubia-unhealthy
-  name: kubia
-  livenessProbe:
-    httpGet: 
-      path: /
-      port: 8080
+  containers:
+  - image: luksa/kubia-unhealthy
+    name: kubia
+    livenessProbe:
+      httpGet: 
+        path: /
+        port: 8080
