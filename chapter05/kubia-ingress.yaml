@@ -9,5 +9,7 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: kubia-nodeport
-          servicePort: 80
+          service:
+            name: kubia-nodeport
+            port:
+              number: 80
