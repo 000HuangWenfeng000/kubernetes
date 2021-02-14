@@ -3,7 +3,7 @@ kind: Endpoints
 metadata:
   name: external-service
 subsets:
-  - address:
+  - addresses:
     - ip: 11.11.11.11
     - ip: 22.22.22.22
     ports:
