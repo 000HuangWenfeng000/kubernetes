@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kubia
+spec:
+  rules:
+  - host: foo.example.com
+    http: 
+      paths:  
+      - path: / 
+        pathType: Prefix
+        backend:
+          service:
+            name: foo
+            port:
+              number: 80
+  - host: bar.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: bar
+            port: 
+              number: 80
+
