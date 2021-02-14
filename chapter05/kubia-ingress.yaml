@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: extension/v1beta1
 kind: Ingress
 metadata: 
   name: kubia
