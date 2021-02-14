@@ -6,7 +6,8 @@ spec:
   rules:
   - host: kubia.example.com
     http: 
-      paths: /
-      backend:
-        serviceName: kubia-nodeport
-        servicePort: 80
+      paths:
+      - path: /
+        backend:
+          serviceName: kubia-nodeport
+          servicePort: 80
