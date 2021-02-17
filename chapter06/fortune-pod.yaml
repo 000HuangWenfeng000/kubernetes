@@ -6,12 +6,12 @@ spec:
   containers:
   - image: luksa/fortune
     name: html-generator
-    volumneMounts:
+    volumeMounts:
     - name: html
       mountPath: /var/htdocs
   - image: nginx:alpine
     name: web-server
-    volumneMounts:
+    volumeMounts:
     - name: html
       mountPath: /usr/share/nginx/html
       readOnly: true
