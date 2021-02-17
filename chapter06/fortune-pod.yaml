@@ -17,7 +17,7 @@ spec:
       readOnly: true
     ports:
     - containerPort: 80
-      protocols: TCP
+      protocol: TCP
   volumnes:
   - name: html
     emptyDir: {}
