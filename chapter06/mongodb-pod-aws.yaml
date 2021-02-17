@@ -5,15 +5,15 @@ metadata:
 spec:
   volumes:
   - name: mongodb-data
-    gcePersistentDisk: 
-      pdName: mongodb
+    awsElasticBlockStore:
+      volumeId: my-volume
       fsType: ext4
   containers:
   - image: mongo
     name: mongodb
     volumeMounts:
     - name: mongodb-data
-      mountPath: /data/db 
+      mountPath: /data/db
     ports:
     - containerPort: 27017
       protocol: TCP
